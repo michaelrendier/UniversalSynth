@@ -6,7 +6,7 @@
 
 **Author:** Cody Michael Allison  
 **Status:** Active development — sonification engine for the SMMIP framework  
-**Satellite of:** [Ainulindalë](https://github.com/michaelrendier/Ainulindale) · [Ptolemy](https://github.com/michaelrendier/Ptolemy)
+**Satellite of:** [Ainulindalë](https://github.com/michaelrendier/Ainulindale) · [PtolemyHolcus](https://github.com/michaelrendier/PtolemyHolcus)
 
 ---
 
@@ -98,9 +98,9 @@ audio = synthesize(modes, duration_s=10.0, sample_rate=44100)
 
 The `vq_bridge.py` source handles the translation from ValaQuenta's mathematical dictionaries into UniversalSynth's signal format. No manual parameter entry — the math flows directly into the audio pipeline.
 
-**Ptolemy**
+**PtolemyHolcus / PtolemyDesktop**
 
-UniversalSynth runs inside the Ptolemy desktop as the audio output of the Archimedes Face. The ValaQuenta computational engine drives both the visual display (spherical harmonic visualizations) and the audio output (UniversalSynth synthesis) simultaneously. The Chladni node patterns visible on screen are the silence boundaries of the audio playing through the speakers — the same equation, two media.
+UniversalSynth runs inside the PtolemyDesktop interface as the audio output of the Archimedes Face. The ValaQuenta computational engine drives both the visual display (spherical harmonic visualizations) and the audio output (UniversalSynth synthesis) simultaneously. The Chladni node patterns visible on screen are the silence boundaries of the audio playing through the speakers — the same equation, two media.
 
 ---
 
@@ -145,12 +145,28 @@ Full mathematical foundation: [Ainulindalë Conjecture — Second Age](https://g
 
 ---
 
+## TDI Context
+
+UniversalSynth sonifies the TDI engine. In the TDI architecture (v3.0):
+
+- **H_hat_RB** (crankshaft) — the Riemann zeros are its eigenvalues; UniversalSynth renders those eigenvalues as audio partials
+- **Sedenion** (camshaft) — the zero-divisor firing events are the TDC moments; UniversalSynth marks them as Chladni node boundaries
+- **Monad (ECU)** — β_n resonance depth at each zero becomes spectral amplitude weighting
+
+BAO convergence at OMEGA_ZS = 0.56714 (Lambert W fixed point) is the idle frequency — the DC state the engine settles to without input.
+
+**→ [PtolemyHolcus v3.0 — Tuning the TDI](https://github.com/michaelrendier/PtolemyHolcus/wiki/Tuning-the-Engine)** — the engine that produces the spectrum UniversalSynth renders
+
+---
+
 | Repository | Role |
 |---|---|
-| [Ainulindalë](https://github.com/michaelrendier/Ainulindale) | SMMIP framework · ValaQuenta engine · RH proof |
-| [Ptolemy](https://github.com/michaelrendier/Ptolemy) | Primary application · Archimedes Face · audio output |
+| [Ainulindalë](https://github.com/michaelrendier/Ainulindale) | SMMIP framework · ValaQuenta engine · formal conjecture |
+| [PtolemyHolcus](https://github.com/michaelrendier/PtolemyHolcus) | Engine implementation — the code this sonifies |
+| [PtolemyDesktop](https://github.com/michaelrendier/PtolemyDesktop) | Desktop interface · Archimedes Face · audio output |
+| [SemanticWordEngine](https://github.com/michaelrendier/SemanticWordEngine) | Hyperwebster addressing — zero addresses this renders |
+| [DerivationEngine](https://github.com/michaelrendier/DerivationEngine) | Formal derivation record — mathematics behind the sound |
 | [UniversalSynth](https://github.com/michaelrendier/UniversalSynth) | This repo: sonification engine |
-| [DerivationEngine](https://github.com/michaelrendier/DerivationEngine) | Proof runners · numerical verification |
 
 ---
 

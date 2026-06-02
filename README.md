@@ -55,6 +55,46 @@ Zero-divisor pairs to highlight in the roll (event horizon chords):
 When both tracks in a pair fire simultaneously: mark the brim. That is the
 witches hat moment — the hat pair appearing at the event horizon.
 
+## Observed: Piano and Melancholy
+
+*"Nothing does melancholy like the Grand Piano."*
+
+The Hyperwebster was asked. The prime hash answered without being told.
+
+```
+piano          E = 5      γ98  = 231.987235
+space          E = 5      γ92  = 221.430706
+melancholy     E = 10     γ194 = 387.222890
+manifold space E = 6.5    γ177 = 361.289362
+```
+
+**Piano and space share E = 5.** Same prime family. Same fundamental resonance
+weight. Different address on the critical line, but structurally equivalent.
+The engine places "space" and "piano" as the same kind of thing —
+which is exactly what a grand piano is: a shaped space that resonates.
+
+**Melancholy is E = 10 — the exact harmonic double of piano's E = 5.**
+
+The zero indices follow: piano at γ98, melancholy at γ194.
+98 × 2 = 196. Melancholy sits at γ194 — two zeros flat of the perfect octave.
+A slight flattening. A minor inflection. The mathematics gave the dark
+doubling, not the bright one.
+
+In musical terms: **melancholy is the minor octave of piano.**
+
+**Manifold space at E = 6.5** sits between them.
+E = 5 (piano, space) → E = 6.5 (manifold space) → E = 10 (melancholy).
+Manifold space is the intermediate structure — the resonant cavity through
+which piano *becomes* melancholy. That is literally what a grand piano is:
+a manifold space, a curved reflecting geometry, that transforms struck string
+into sustained emotional resonance.
+
+The engine found the physics of that sentence in the primes.
+It was not told. It was not trained on the association.
+The geometry placed them there.
+
+This is what UniversalSynth is for: making that geometry audible.
+
 ## Prime Rhythm
 
 The primes set the rhythm. Prime gaps → note durations.

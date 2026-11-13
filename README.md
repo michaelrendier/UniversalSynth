@@ -180,11 +180,19 @@ belong with this repository and are listed here until copied.
 ## Open: handedness (left/right = Blue/Red)
 
 The table above puts e₀–e₇ on the left hand as J_neg/Blue and e₈–e₁₅ on the right as
-J_pos/Red, assigned by the usual chirality rule (the three-finger rule). The Ainulindale
-wiki and the J_red/J_blue record take J_red as the lower octonion e₀–e₇. The two
-assignments disagree and **neither is yet tested**: the outcome of a chirality test (which
-half is Red under the project's own orientation convention) decides it. Until then the
-README keeps its assignment and the disagreement is recorded here.
+J_pos/Red, assigned by the ordinary chirality rule (the three-finger rule). The Ainulindale
+wiki and the J_red/J_blue record take J_red as the lower octonion e₀–e₇, so the two
+assignments disagree.
+
+**Author's statement (2026-11-13):** handedness is not the three-finger rule. It is the tilt of
+the real axis to the imaginary axis that the torus fields wrap around. The variance of that tilt
+produces an emergent *swap twist* through two precessions (a regular one and an epicyclic one),
+which builds in the cross and dot products and makes the Inside-Out Inversion its own operation;
+the swap is what separates the geometries from the content. The mathematics is documented in the
+repositories (probably `AbrikosovTree`; candidates are listed in `Ainulindale/wiki/133_canonical_maths.md`
+§7 item 6). Until that is confirmed and tested, this README's left/right assignment is a placeholder
+and is **not** authoritative. It will be settled when the canonical maths is updated, before
+anything is propagated here.
 
 ## Correction recorded 2026-11-13: zero-divisor chords
 

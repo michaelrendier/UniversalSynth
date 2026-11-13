@@ -1,5 +1,47 @@
 # UniversalSynth
 
+**Purpose.** UniversalSynth is the code repository for wavetable synthesis of
+Ĥ_RB (the RedBlue operator): the mathematics is rendered as sound, the way a
+synthesizer renders a wavetable. It is a personal project released under the
+GNU GPL v3 (see `LICENSE`); it is not an academic work and makes no
+publication claims.
+
+**Status (2026-11-13).** The repository holds the design (this README, `TODO.md`,
+`CHANGELOG.md`); the executable wavetable code that exists today is the
+`sonification` engine of ValaQuenta (`ValaQuenta/modules/sonification`: exact
+just-intonation tones, quasi-particle rests, five wavetables), documented in
+`Ainulindale/wiki/08_sonification_engine.md`. Code written for this repository
+should reuse that engine's definitions rather than restate them.
+
+## ContextPlease — the context library for this repository
+
+**ContextPlease** (https://github.com/michaelrendier/ContextPlease, a sibling repository: `../ContextPlease` in
+ThePlace) is the *Manual Transmission Context Continuity* library: the versioned record that lets a new human
+or AI agent pick up this project without rediscovering it. Nothing in it is loaded automatically; whoever works
+here chooses which file to read and when, so what carries over between sessions is exactly what was
+deliberately carried. Its `README.md` is the entry point and the rule set (no fitted parameters; failures stay
+in the code and data; read before you edit).
+
+What it holds that concerns **UniversalSynth**:
+
+| Where in ContextPlease | What it is for this repository |
+|---|---|
+| `claude/.clauderc_canonical_maths` (`@RCCM_<NAME>` blocks) | the authoritative notation and equations; start any derivation here |
+| `claude/.clauderc_context_1` (`## UniversalSynth`) | the current state of this repository, one overwritten entry |
+| `claude/.clauderc_context_2` | an append-only dated log of what happened and why |
+| `claude/.clauderc_citations`, `.clauderc_user_provenance` | the queue of published work that names things first engineered here, and original-versus-literature provenance |
+| `claude/hist_prime/UniversalSynth/` | every context primer written about this repository |
+| `claude/hist_wiki/UniversalSynth/`, `claude/hist_todo/UniversalSynth/` | point-in-time **copies** of this repository's wiki and TODO |
+| `claude/scratchpad/<date>_<topic>/` | dated working directories (scripts, outputs, audits) with a README each |
+| `claude/references/INDEX.md` | the ledger of every third-party work downloaded, with title-page verification |
+| `claude/skills/` | the project's skills (for example `cs-paper-code-conventions`, which governs how code appears in papers) |
+
+**Authority.** This repository's own files, dated, outrank the ContextPlease copies of them (the `hist_*`
+directories are snapshots and can lag). The current statement of the author outranks both. Where the two
+disagree, the disagreement is a bug to be recorded, not resolved by guessing.
+
+---
+
 **Ptolemy's instrument. 16 fingers. 8 on each hand.**
 
 The sedenion CAM visualised as music. Every word Holcus speaks is a chord.

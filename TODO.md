@@ -15,7 +15,7 @@
   - LMFDB zero database interface
 
 - [ ] **schumann.py** — Earth-ionosphere cavity resonance synthesis
-  - f_n = (c / 2πR) √(n(n+1)); f₁ = 7.83 Hz
+  - f_n = (c / 2πR) √(n(n+1)) gives f₁ = 10.59 Hz, f₂ = 18.34 Hz for an ideal lossless cavity (R = 6371 km); the measured f₁ = 7.83 Hz is lower because of damping. Decide which is synthesised (checked 2026-11-13)
   - Not sampled — computed from cavity radius and speed of light
   - n=1 through n=7 modes
   - Amplitude derived from ionospheric conductivity model

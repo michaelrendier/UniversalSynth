@@ -137,6 +137,21 @@ The geometry placed them there.
 
 This is what UniversalSynth is for: making that geometry audible.
 
+> **Re-test, 2026-11-13: NOT REPRODUCED (recorded, not removed).** The two
+> zeros quoted are real: γ₉₈ = 231.987235 and γ₁₉₄ = 387.222890
+> (`mpmath.zetazero`). But the current prime hash (`VAPMIP/monad.py`,
+> `_word_zero_idx`: Horner base 95 → next prime → π(p)) maps *piano* to index
+> **4066**, *space* 4173, *melancholy* **1182**, *manifold space* 1282, i.e.
+> γ = 4569.62, 4671.03, 1627.76, 1740.17. Four variants of the hash (base 94,
+> 95, 96, 97; offsets 0, 31, 32) were tried and none sends *piano* to 98. The
+> energy E here is in [0, 1] (E = |sin(πγ/(γ+1))|: 0.0007, 0.0007, 0.0019,
+> 0.0018), so "E = 5 and E = 10" is a different scale from the one the code
+> uses now, and the "harmonic double" has no counterpart. The observation
+> came from an earlier version of the hash (not identified) and is kept above
+> as a dated record. Whether *piano* and *melancholy* are related under the
+> current mechanism is an open question; the instrument to explore it with is
+> the Yamaha weighted-key piano on USB (MIDI) once it is connected.
+
 ## Prime Rhythm
 
 The primes set the rhythm. Prime gaps → note durations.
@@ -153,3 +168,28 @@ The universe expanding, one prime at a time.
 - [ ] Witches hat animation: virtual pairs appear/annihilate at horizon line
 - [ ] Export to MIDI (standard 16-channel = perfect sedenion mapping)
 - [ ] Import Holcus session → play what Holcus was thinking
+
+## Original wave files
+
+The First-Age renderings are in `Ainulindale/AgeFirst/original_2026/ResearchPaper/FirstDraft/FirstAge/Ainulindale/Ainur/`:
+`Ainulindale_Electron_Orbitals.wav`, `Ainulindale_Movement_I_Introduction.wav`,
+`Ainulindale_Mars_Strong_Force.wav`, `Ainulindale_Beginning_of_Light.wav`, and the
+`midi/` directory (Beethoven, Grieg, Tchaikovsky, Prokofiev, Mozart, Carmina Burana). They
+belong with this repository and are listed here until copied.
+
+## Open: handedness (left/right = Blue/Red)
+
+The table above puts e₀–e₇ on the left hand as J_neg/Blue and e₈–e₁₅ on the right as
+J_pos/Red, assigned by the usual chirality rule (the three-finger rule). The Ainulindale
+wiki and the J_red/J_blue record take J_red as the lower octonion e₀–e₇. The two
+assignments disagree and **neither is yet tested**: the outcome of a chirality test (which
+half is Red under the project's own orientation convention) decides it. Until then the
+README keeps its assignment and the disagreement is recorded here.
+
+## Correction recorded 2026-11-13: zero-divisor chords
+
+Basis products are never zero (e_a·e_b = ±e_{a⊕b}, norm 1), so "(e₃, e₁₀): e₃ × e₁₀ = 0" and
+"(e₆, e₉): e₆ × e₉ = 0" above are not correct as written. The zero-divisors are the sums:
+(e₃ ± e₁₀) and (e₆ ± e₉) are zero-divisors, each with four partners among the forms
+e_k ± e_l, and there are 84 such elements in all (Ainulindale wiki 25 §4).
+
